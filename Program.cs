@@ -12,6 +12,10 @@ namespace CreateClass
             Console.WriteLine(person1.ToString());
             Console.WriteLine(person2.ToString());
             Console.WriteLine(person3.ToString());
+
+            Employee emp4 = new Employee("Eric Blood Axe", new DateTime(1982, 2, 28), Genders.Male,
+                1400M, Professions.Bellatores, new Room(31));
+            Console.WriteLine(emp4.ToString());
         }
     }
 }

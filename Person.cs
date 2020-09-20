@@ -6,15 +6,15 @@ namespace CreateClass
 {
     class Person
     {
-        private string Name { get; set; }
-        private DateTime BirthDate { get; set; }
-        private Genders Gender { get; set; }
+        protected string Name { get; set; }
+        protected DateTime BirthDate { get; set; }
+        protected Genders Gender { get; set; }
 
-        public Person(string Name, DateTime Birthdate, Genders Gender)
+        public Person(string name, DateTime birthDate, Genders gender)
         {
-            this.Name = Name;
-            this.BirthDate = Birthdate;
-            this.Gender = Gender;
+            this.Name = name;
+            this.BirthDate = birthDate;
+            this.Gender = gender;
         }
 
         public override string ToString()
